@@ -20,7 +20,7 @@ def scrape():
         
         ## ADD CODE HERE ##
         soup = BeautifulSoup(browser.page_source,"html.parser")
-        for ul_tag in soup.find_all("ul",attrs = {"class","exoplanets"}):
+        for ul_tag in soup.find_all("ul",attrs = {"class","exoplanet"}):
             li_tags =ul_tag.find_all("li")
             temp_list = []
             for index, li_tag in enumerate(li_tags):
